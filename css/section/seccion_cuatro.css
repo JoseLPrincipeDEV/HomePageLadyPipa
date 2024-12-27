@@ -1,0 +1,143 @@
+.section__cuatro{
+   padding: 30px;
+   height: 100%;
+}
+
+.muestra__section{
+   width: 100%;
+   height: 100%;
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.muestra__selector{
+   width: 100%;
+   height: 100%;
+
+   overflow: hidden;
+   border-radius: 15px;
+}
+
+.muestra__selector img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.muestra__slider{
+   width: 100%;
+   height: 100%;
+
+}
+
+.muestra__contenedor{
+   margin: 0 15% 15% 15%;
+   width: 54%;
+   position: relative;
+}
+
+.tallas-section-tres{
+   bottom: 7.8%; /* Ajusta la distancia desde el fondo de la imagen */
+}
+
+.btn-left-section,
+.btn-right-section {
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   top: 110%;
+   color: black;
+   font-weight: 900;
+   background-color: #fff;
+   height: 35px;
+   width: 35px;
+   border: 1px solid #9b9b9b; 
+   border-radius: 100%; 
+   transform: translateY(-50%); 
+}
+
+.muestra__contenedor .btn-left-section {
+   left: calc(50% - 35px); /* Coloca el botón izquierdo en el centro, pero desplazado a la izquierda */
+}
+
+.muestra__contenedor .btn-right-section {
+   left: calc(50% + 20px); /* Coloca el botón derecho en el centro, pero desplazado a la derecha */
+}
+
+.btn-left-section svg,
+.btn-right-section svg {
+    transition: all 0.3s ease;
+}
+
+/* Ocultamos el segundo SVG por defecto */
+.arrow-left-hover,
+.arrow-right-hover {
+    display: none;
+}
+
+/* Al pasar el mouse, mostramos el SVG alternativo */
+.btn-left-section:hover .arrow-left-hover,
+.btn-right-section:hover .arrow-right-hover {
+    display: block;
+}
+
+.btn-left-section:hover .arrow-left,
+.btn-right-section:hover .arrow-right {
+    display: none;
+}
+
+.muestra__selector {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.muestra__selector img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+.slider-btn {
+   position: absolute;
+   padding:2.6%;
+   background-color: #fff6;
+   border-radius: 50%;
+   color: white;
+   border: none;
+   cursor: pointer;
+   z-index: 10; 
+}
+
+.left-btn {
+   left: 36%; 
+   top: 34%; 
+   transform: translateY(-50%); /* Ajusta para centrarlo exactamente */
+}
+
+.center-btn {
+   left: 43%; 
+   top: 50%; 
+   transform: translateX(-50%) translateY(-50%); /* Ajuste para centrarlo perfectamente */
+}
+
+.right-btn {
+   left:28%;
+   bottom: 25%; 
+   transform: translateY(-50%); /* Ajuste para centrarlo exactamente */
+}
+
+.slider-btn div{
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   background-color: #fff;
+ /* Sombra mucho más visible */
+}
+
+.slider-btn:hover{
+   padding:2.9%;
+}

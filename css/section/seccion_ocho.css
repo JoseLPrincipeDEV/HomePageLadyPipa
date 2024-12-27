@@ -1,0 +1,42 @@
+.trustpilot-rating {
+    font-family: Arial, sans-serif;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.trustpilot-rating h3 {
+    color: #212121;
+    margin: 0;
+    font-size: 16px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    margin: 5px 0;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: #00b67a; /* Color verde de Trustpilot */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star.half {
+    background: linear-gradient(90deg, #00b67a 50%, #dcdce6 50%);
+}
+
+.score {
+    color: #595959;
+    font-size: 14px;
+    margin: 0;
+}
+
+.section__ocho {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    height: 40px; 
+    padding-bottom: 10px;
+}

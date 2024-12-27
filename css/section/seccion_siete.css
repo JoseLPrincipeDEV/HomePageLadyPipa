@@ -1,0 +1,75 @@
+/* Contenedor principal .contenedor__siete */
+.contenedor__siete {
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    margin: 100px 0;
+}
+
+/* Contenedor de cada div dentro de .contenedor__siete */
+.contenedor__siete div {
+    width: 80%;              
+    height: 100%;              
+    padding-left: 10px;
+    margin: 10px;
+    display: grid;
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;      
+}
+
+.contenedor__siete div a{
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    text-align: center;
+    gap: 10px;
+}
+
+/* El div del círculo dentro de .contenedor__siete div */
+.contenedor__siete div div {
+    background-color: #0001;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    position: relative;
+    left: 35%;
+    margin-bottom: 3px ;
+}
+
+
+
+/* La imagen dentro del div circular */
+.contenedor__siete div div img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.contenedor__siete .beneficios{
+    font-family: "Hubballi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.4*var(--font-default));
+}
+
+.contenedor__siete .descripcion{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(0.8*var(--font-default));
+}
+
+.section__siete .button__siete{
+    display: none;
+    font-size: 100px;
+
+}

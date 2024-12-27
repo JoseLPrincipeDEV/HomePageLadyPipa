@@ -1,0 +1,94 @@
+.slider__track .slider__seis div a{
+    text-decoration: none;
+    padding: 7px;
+}
+
+.section__seis{
+    width: 100%;
+    margin: 20px 0;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.section__seis .slider__seis__list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 290px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 98%;
+    overflow: hidden;
+}
+
+.section__seis .slider__seis__list .slider__track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.section__seis{
+    position: relative;
+    width: 100%;
+    padding: 0 1%;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.section__seis a img{
+    object-fit: cover;
+    height: 260px;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+    margin-right: 5.8vw;
+}
+
+@media (min-width: 768px) {
+    .section__seis{
+        width: 100%;
+    }
+
+    .section__seis a img{
+        width: 250px;
+    }
+}
+
+.carrusel-arrow{
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus{
+    outline: 0;
+}
+
+.carrusel-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,0.7);
+}
+
+.carrusel-prev {
+    left: 0;
+}
+
+.carrusel-next {
+    right: 0;
+}

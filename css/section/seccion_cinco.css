@@ -1,0 +1,121 @@
+.section__cinco{
+    padding: 53px 0;
+}
+
+.carrusel__cinco{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrusel__cinco .slider__cinco{
+    width: 400%;
+    display: flex;
+}
+
+.carrusel__cinco .slider__cinco .sleader__cinco__section{
+    width: calc(100% / 4);
+}
+
+.carrusel__cinco .slider__cinco .sleader__cinco__section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn__left__cinco,
+.btn__right__cinco{
+    display: flex;
+    position: absolute;
+    top:50%;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+    transform: translate(0,-50%);
+    transition: .5 ease;
+    user-select: none;
+}
+
+.btn__right__cinco{
+    right: 2%;
+}
+
+.btn__left__cinco{
+    left: 2%;
+}
+
+.buttons__cinco{
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    bottom:  40%; 
+    z-index: 15; 
+}
+
+/* Estilo para los botones indicadores */
+.slider__btn__cinco {
+    all: unset;
+    height: .9vw; 
+    width: .9vw; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    bottom:  4%; 
+    z-index: 15; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Alineación central de los botones indicadores */
+.slider__btn__cinco:first-of-type {
+    right: 7%; /* Ajusta para centrar los botones */
+    transform: translateX(-15%);
+}
+
+.slider__btn__cinco:nth-of-type(2) {
+    right: 5%; /* Segundo botón */
+    transform: translateX(-10%);
+}
+
+.slider__btn__cinco:nth-of-type(3) {
+    right: 3%; /* Tercer botón */
+    transform: translateX(-5%);
+}
+
+.slider__btn__cinco:nth-of-type(4) {
+    right: 1%; /* Cuarto botón */
+    transform: translateX(0%);
+}
+
+/* Efecto visual al pasar el cursor */
+.slider__btn__cinco:hover {
+    background-color: #fffd;
+    transform: scale(1.2);
+}
+
+.link__section__cinco{
+    position: absolute;
+    bottom: 7%;
+    height: 50px;
+    width: 12vw;
+    background-color: #fff;
+    border-radius: 60px ;
+    left: 44%;
+    text-align: center;
+}
+
+.link__section__cinco a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top:30%;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: calc(0.9*var(--font-default));
+    font-style: normal;
+}

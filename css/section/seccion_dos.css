@@ -1,0 +1,225 @@
+.section__dos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section__dos .contenedor {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    margin: 0 auto;
+    position: relative; /* posicionamiento de los elementos internos */
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+
+
+.contenedor img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.sleader__box {
+    width: 100%;
+    display: block;
+}
+
+.tallas__ig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgba(255, 250, 250, 0.8); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute; 
+    bottom: 10%; /* Ajusta la distancia desde el fondo de la imagen */
+    left: 0;
+    width: 100%;
+    min-height: 20%;
+    max-width: 60%;
+    max-width: 440px;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.contenedor:hover .tallas__ig {
+    opacity: 1; 
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: calc(0.79*var(--font-default));
+}
+
+.tallas__ig span{
+    padding: 0px !important;
+}
+
+.tallas__ig .tallas__ig__size {
+    display: flex;
+    gap: 7px;
+    padding: 0 15px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tallas__ig__size label{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    line-height: 0; /* Ajusta el espaciado si es necesario */
+    padding:10px 1px;
+    margin: 0 0 !important;
+}
+
+.tallas__ig .tallas__ig__size label button{
+    all: unset;
+    font-size: calc(0.9*var(--font-default)); 
+    cursor: pointer;
+}
+
+.tallas__ig .tallas__ig__size label button:active {
+    height: 2000%;
+    outline: 1px solid black; 
+    border-radius: 1px;
+}
+
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .tallas__ig__size {
+        padding: 20px;
+    }
+    .tallas__ig {
+        bottom: 11%;
+    }
+    .tallas__ig .tallas__ig__size label{
+        font-size:0.9rem; /* Ajusta el tamaño aquí */
+        line-height: 0; /* Ajusta el espaciado si es necesario */
+    }
+}
+
+.tallas__ig__size label:last-child {
+
+    padding-bottom: 25px;
+}
+
+.caracteristicas{
+    font-family: "Montserrat";
+    font-size: 0.6em;
+
+}
+
+.tallas__ig__size__dos label{
+    padding:15px 15px;
+}
+
+.caracteristicas a{
+    text-decoration: none;
+    color: #000;
+}
+
+.caracteristicas .prenda{
+    display: flex;
+    padding-top: 15px;
+    padding-left: 0px;
+    font-weight: 600;
+}
+
+.caracteristicas .precio{
+    color: #444;
+}
+
+
+.caracteristicas .prenda .name{
+    width: 95%;
+    padding-bottom: 8px;
+}
+
+.caracteristicas .prenda .icon {
+    width: 5%;
+}
+
+.caracteristicas .prenda .icon button{
+    all: unset;
+    cursor: pointer;
+}
+
+
+.caracteristicas .prenda .icon img{
+    width: 12px;
+    height: 12px;  
+}
+
+.caracteristicas .prenda .name a span {
+    display: block; 
+}
+
+.contenedor__slider{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor__slider .sliders{
+    width: 300%;
+    display: flex;
+}
+
+.slider__section{
+    width: calc(100% / 3);
+}
+
+
+
+.btn__left,
+.btn__right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: .8rem;
+    background-color: transparent;
+    border-radius: 100%;
+    margin: 0;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color:#ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn__left{
+    left: 10px;
+}
+
+.btn__right{
+    right: 10px;
+}
+
+
+.btn__left:hover,
+.btn__right:hover{
+    background-color: #333333d4;
+    color: #fff;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .section__dos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .tallas__ig {
+        bottom: 10%; /* Ajusta la distancia desde el fondo de la imagen */
+    }
+}

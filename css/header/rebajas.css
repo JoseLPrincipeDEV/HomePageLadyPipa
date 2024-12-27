@@ -1,0 +1,122 @@
+.rebajas{
+    color: red;
+}
+
+.details .box {
+    display: none;
+    position: fixed;
+    height: 300px;
+    width: 100%;
+    top: calc(128px);
+    left: 0;
+    background-color: white;
+}
+
+
+.details[open] .box {
+     display: flex;
+     border-top: 1px solid #c5c5c5;
+     border-bottom: 1px solid #c5c5c5;
+     
+}
+
+
+.box__rebajas {
+    display: flex;
+    margin-top: 50px;
+    width: 35%; 
+    height: 100%;
+}
+
+
+.box__rebajas .categoria {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.box__rebajas .categoria > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Hubballi";
+    font-weight: 500;
+    font-size: 2em;
+    color: black;
+    
+}
+
+.box__rebajas .categoria >li {
+    list-style-type: none; 
+    padding-right: 0px;  
+    margin-bottom: 0px; 
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.box__rebajas .categoria > li > a  {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 0px;
+    margin-top: 0;
+    color: rgb(105, 105, 105);
+}
+
+.img__rebajas {
+    width: 65%;
+    height: 100%;
+}
+
+.img__rebajas > img {
+    margin-top: 50px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(58, 58, 58, 0.2);
+}
+
+
+.img__rebajas a {
+    position: absolute; /* Lo posicionamos dentro de la imagen */
+    bottom: 19%; 
+    left: 53%; 
+    transform: translateX(30%); 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    font-size: 1.6em;
+}
+
+/* Efecto cuando el mouse pasa sobre el enlace */
+.img__rebajas a:hover {
+    color: #f0f0f0; 
+}
+
+.item__categoria a {
+    display: inline-block; /*El área de hover se ajustara al tamaño del contenido (span) */
+}
+
+.spam__efect__rebaja {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+
+.spam__efect__rebaja:hover {
+    color: rgb(32, 32, 32); 
+}
+
+.box__rebajas > div {
+    width:35%;
+    
+}
+

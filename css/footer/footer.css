@@ -1,0 +1,182 @@
+footer{
+    height: 320px;
+    width: 100%;
+
+    margin-top: 150px;
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 4%;
+}
+
+.footer .parte__uno{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.footer .parte__uno .informacion p{
+    color: rgb(32, 32, 32);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: calc(0.85*var(--font-default));
+    padding-bottom: 14px;
+}
+
+.footer .parte__uno .informacion a{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(0.8*var(--font-default));
+}
+
+.footer .parte__uno .informacion .informacion__newsletter{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(0.8*var(--font-default));
+}
+
+.footer .parte__uno .informacion a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.footer .parte__uno .informacion ul{
+    list-style-type: none;
+}
+
+.footer .parte__uno .informacion ul li{
+    padding: 5px 0;
+    
+}
+
+.newsletter-input input[type="email"] {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-input input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-left: none; 
+    background-color: #000f; 
+    color: white; 
+    border-radius: 0 4px 4px 0; 
+    cursor: pointer; 
+}
+
+.newsletter-input input[type="submit"]:hover {
+    background-color: #000a; 
+}
+
+.footer .parte__dos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 200px;
+}
+
+.footer .parte__dos .iconos{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 21%;
+}
+
+.footer .parte__dos .iconos a{
+    text-decoration: none;
+}
+
+.footer .parte__dos .iconos img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .parte__dos .copyright{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(0.73*var(--font-default));
+    color: #000a;
+}
+
+.footer .parte__dos .divisas {
+    display: flex;
+}
+
+.footer .parte__dos .divisas .relleno{
+    width: 70%;
+}
+.footer .parte__dos .divisas .contenido{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top:21%;
+}
+
+.footer .parte__dos .divisas .contenido span{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: calc(0.9*var(--font-default));
+}
+
+.footer .parte__dos .divisas button{
+    all: unset;
+    cursor: pointer;
+}
+
+
+.footer .parte__dos .divisas img{
+    width: 10px;
+    height: 10px;
+}
+
+.footer .parte__dos .pagos{
+    display: flex;
+}
+
+.footer .parte__dos .pagos .relleno{
+    width: 40%;
+}
+.footer .parte__dos .pagos .contenido{
+    width: 60%;
+}
+
+.footer .parte__dos .pagos .contenido img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .footer .parte__uno{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 70px;
+    }
+
+    .footer .parte__uno .informacion.newsletter {
+        grid-column: 1 / -1; /* Ocupa desde la primera columna hasta la última */
+    }
+
+    .footer .parte__dos{
+        height: 100px;
+
+    }
+}

@@ -1,0 +1,216 @@
+
+/* --------------------------------
+    Root Variables
+----------------------------------*/
+
+:root {
+    --header-grid-template: "logo main-nav section-menu" / minmax(0, 0.6fr) fit-content(60%) minmax(0, 1fr);
+    --font-default: 1em; 
+}
+
+/* --------------------------------
+    Header Styles
+----------------------------------*/
+
+.header {
+    padding: 0;
+    margin: 0;
+    height: 128px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; /* Asegúrate de que el header esté pegado a la parte superior */
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: calc(0.9*var(--font-default));
+    line-height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #00000011, #00000011); /* Fondo inicial */
+    transition: background 0.5s ease; /* Transición suave para el fondo */
+    z-index: 9999;
+}
+
+.header:hover {
+    background: linear-gradient(to bottom, #ffffff, #ffffff); 
+    color: black;
+}
+
+
+.header__box {
+    display: grid;
+    grid-template: var(--header-grid-template);
+    align-items: center; 
+}
+
+
+/* --------------------------------
+    Logo and Navigation Styles
+----------------------------------*/
+
+.logo_header {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.header__nav {
+    grid-area: main-nav;
+    
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 0.3em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    
+}
+
+.nav__item {
+    flex: 0 1 auto; /* Permite que los elementos crezcan y se encojan según el espacio disponible */
+    text-align: center; 
+    margin: 0.5em;
+    cursor: pointer; 
+}
+
+
+/* --------------------------------
+    Section Menu Styles
+----------------------------------*/
+
+.section__menu {
+    grid-area: section-menu;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 2.3em; /* Espacio entre los elementos, ajusta según sea necesario */
+    height: 128px; 
+    padding-right: 1.4em; 
+}
+
+.section__menu .button__header {
+    flex-shrink: 0; /* Evita que los botones se encojan */
+}
+
+.section__menu .button__header > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px; 
+    width: auto; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    font: inherit; /* Usa la misma fuente que el elemento padre */
+    color: inherit; /* Usa el mismo color que el elemento padre */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    font-size: calc(0.8*var(--font-default));
+    
+}
+
+.section__menu .icon__menu,
+.section__menu .button__header {
+    display: flex;
+    align-items: center;
+}
+
+.logo_header {
+    width: 250px;
+    height: 100px;
+}
+
+.logo_header > a{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Hubballi", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(3*var(--font-default));
+    margin-left: calc(0.6*var(--font-default));
+}
+
+/* --------------------------------
+    Image Sizes for Header Icons
+----------------------------------*/
+
+.header__box > .section__menu > .button__header > button > img {
+    height: 9px;
+    width: 9px;
+    margin-left: 6px;
+}
+
+.header__box > .header__nav > nav > .nav__list > .nav__item > .details > .summary > img {
+    height: 9px;
+    width: 9px;
+    margin-left: 5px;
+}
+
+.header__box > .section__menu > .icon__menu > img {
+    height: 18px;
+    width: 18px;
+}
+
+
+/* --------------------------------
+    Dropdown (Details) Menu Styles
+----------------------------------*/
+
+.details {
+    position: relative;
+}
+
+.details summary {
+    list-style: none; 
+    cursor: pointer; 
+}
+
+.details summary::-webkit-details-marker {
+    display: none; 
+}
+
+.details summary::marker {
+    display: none; 
+}
+
+
+.header {
+    padding: 0;
+    margin: 0;
+    height: 128px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: calc(0.9*var(--font-default));
+    line-height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #00000011, #00000011);
+    transition: all 0.5s ease; /* Cambiado a 'all' para transicionar todo */
+    z-index: 9999;
+}
+
+/* Modifica el hover existente */
+.header:not(.header--scrolled):hover {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    color: black;
+}
+
+/* Añade la nueva clase para el scroll */
+.header--scrolled {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    color: black;
+}
+

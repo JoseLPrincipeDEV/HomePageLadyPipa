@@ -1,0 +1,115 @@
+/* --------------------------------
+    Category Dropdown (Details) Styles
+----------------------------------*/
+
+.spam__efect, .summary__categoria{
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+
+/* -----------------------------
+    Primary Category Dropdown Styles
+----------------------------- */
+
+.details .categoria__prendas {
+    opacity: 0; 
+    visibility: hidden;
+    position: absolute;
+    width: 130px;
+    border-radius: 5px;
+    top: calc(78% + 10px); 
+    left: 1px; 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    z-index: 10;
+}
+
+.details[open] .categoria__prendas {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+
+/* -------------------------------
+    Secondary Category Dropdown Styles
+------------------------------- */
+
+.details__categoria {
+    position: relative;
+}
+
+.details__categoria .list__categoria {
+    display: none;
+    position: absolute;
+    top: -43%;
+    right: -211%; 
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    z-index: 20; 
+}
+
+
+.details__categoria[open] .list__categoria {
+    display: block; 
+}
+/* -------------------------------
+    List Styles
+------------------------------- */
+
+.list__categoria {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.list__categoria .list {
+    padding-left: 10px; 
+    text-align: left; 
+}
+
+.list__categoria .list__item {
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+/* -------------------------------
+    Link Item Styles
+------------------------------- */
+
+.link_item {
+    text-decoration: none; 
+    color: inherit; 
+    list-style: none;
+}
+
+/* -------------------------------
+    Efects
+------------------------------- */
+
+
+.summary__categoria , .spam__efect{
+    position: relative;
+}
+
+.summary__categoria::after, .spam__efect::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.6s ease-out;
+}
+
+.summary__categoria:hover::after, .spam__efect:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
